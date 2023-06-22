@@ -80,11 +80,6 @@ form div.campo {
     flex-direction: row;
     align-items: center;
 }
-#ilogin, #isenha {
-
-}
-label span.icone {
-}
 
 form > input[type=submit] {
     background-color: #0bb582;
