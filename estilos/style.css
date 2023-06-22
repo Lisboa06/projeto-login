@@ -87,6 +87,12 @@ form div.campo {
     align-items: center;
 }
 
+.inputIcon {
+    margin: 1px;
+    height: 26px;
+    width: 26px;
+}
+
 form > input[type=submit] {
     background-color: #0bb582;
     display: block;
@@ -144,7 +150,7 @@ form a.botao span {
 .socialIcons {
     /* border: 1px solid red; apagar dps de configurar icones */
     text-align: center;
-    margin-top: 20px;
+    margin-top: 22px;
 }
 
 figure {
