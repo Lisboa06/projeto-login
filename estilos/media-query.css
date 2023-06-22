@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoints
+-----------------------------------
+Pequenas Telas: de 600px para baixo
+Celular: de 600px até 768px
+Teblet: de 768px até 992px
+Desktop: de 992px até 1200px
+Grandes Telas: de 1200px para cima
+*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+        /* ___TELA DE TABLET___ */
+    body {
+        background-image: linear-gradient(-70deg, #254360, #b96302);
+    }
+    
+    section.login {
+        width: 90vw;
+        height: 300px;
+        background: rgba(175, 180, 180, 0.244);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+    }
+    
+    section.login div.imagem {
+        display: block;
+        float: left;
+        width: 30%;
+        height: 100%;
+        background-image: url(../imagens/fundo-natureza4.jpg);
+    }
+    section.login div.formulario {
+        display: block;
+        float: right;
+        width: 70%;
+        height: 100%;
+        border: 1px solid rgba(152, 152, 152, 0.3);
+        border-left: none;
+    }
+    div.formulario > h1 {
+        font-size: 1.7em;
+    }
+    div.formulario > p {
+        font-size: 1em;
+    }
+    form div.campo {
+        text-align: left;
+    }
+    div.campo input {
+        width: 250px;
+        height: 30px;
+    }
+    div.campo input:focus-within {
+        /* outline: 2px solid rgba(255, 255, 255, 0.17); */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
+    }
+    form > input[type=submit] {
+        margin: 11px 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+        /* ___TELA DE PC E TVS___ */
+    body {
+        background-image: linear-gradient(250deg, #24135a, #dc7600);
+    }
+    
+    section.login {
+        width: 980px;
+    }
+    section.login div.imagem {
+        display: block;
+        float: left;
+        width: 44%;
+        height: 100%;
+        background-image: url(../imagens/fundo-natureza5.jpg);
+    }
+    section.login div.formulario {
+        display: block;
+        float: right;
+        width: 56%;
+        height: 100%;
+    }
+    div.formulario > h1 {
+        font-size: 2em;
+    }
+    div.formulario > p {
+        font-size: 1.2em;
+    }
+}

@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+/* 
+    Paleta de cores
+    Verde: #49a09d
+    Lilás: #5f2c82
+*/
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #2c3a82;
+    min-width: 100vw;
+    min-height: 100vh;
+    transition: linear-gradient 1s ease;
+}
+
+main {
+    min-width: 100vw;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+section.login {
+    overflow: hidden;
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #00000072;
+    position: relative;
+    display: block;
+
+    transition: width .7s, height .5s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+section.login div.imagem {
+    background: #5f2c82 url(../imagens/fundo-natureza1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 200px;
+    display: block;
+}
+
+section.login div.formulario {
+    padding: 12px;
+}
+
+div.formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div.formulario > p {
+    font-size: 0.9em;
+}
+
+form div.campo {
+    /* background-color: #0f1c5e; */
+    display: block;
+    width: 100%;
+    height: 34px;
+    border-radius: 6px;
+    margin: 5px 0;
+    text-align: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#ilogin, #isenha {
+
+}
+label span.icone {
+}
+
+form > input[type=submit] {
+    background-color: #0bb582;
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 35px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+div.campo input {
+    padding: 3px 5px;
+    width: 197px;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+div.campo input:focus-within {
+    outline: 2px solid rgba(138, 138, 138, 0.526);
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.378);
+}
+
+form > input[type=submit]:hover {
+    filter: brightness(84%);
+    -webkit-filter:  brightness(84%);
+
+}
+
+form a.botao {
+    background-color: #ffffff;
+    color: #0f1c5e;
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 35px;
+    border: 1px solid #19cfad;
+    border-radius: 6px;
+    text-decoration: none;
+    padding-top: 5px;
+    margin-top: 6px;
+}
+
+form a.botao:hover {
+    filter: brightness(88%);
+    -webkit-filter:  brightness(88%);
+}
+
+form a.botao span {
+    font-size: 0.9em;
+}
