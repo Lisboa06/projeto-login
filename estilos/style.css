@@ -38,8 +38,11 @@ section.login {
     position: relative;
     display: block;
 
-    transition: width .7s, height .5s;
-    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    /* transition: width .7s, height .5s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1); */
+
+    transition: width .7s, height .6s;
+    transition-timing-function: ease-out;
 }
 
 section.login div.imagem {
