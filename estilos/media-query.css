@@ -18,8 +18,8 @@ Grandes Telas: de 1200px para cima
     section.login {
         width: 90vw;
         height: 300px;
-        background: rgba(175, 180, 180, 0.244);
         border-radius: 16px;
+        background: rgba(175, 180, 180, 0.244);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
@@ -32,6 +32,11 @@ Grandes Telas: de 1200px para cima
         height: 100%;
         background-image: url(../imagens/fundo-natureza4.jpg);
     }
+    section.login div.imagem:hover {
+        background-position: right center;
+        transition: 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    
     section.login div.formulario {
         display: block;
         float: right;
@@ -60,6 +65,13 @@ Grandes Telas: de 1200px para cima
     form > input[type=submit] {
         margin: 11px 0;
     }
+
+    figure {
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        background-color: #ffffff28;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -70,6 +82,9 @@ Grandes Telas: de 1200px para cima
     
     section.login {
         width: 980px;
+        height: 430px;
+        min-height: 40px;
+        transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
     }
     section.login div.imagem {
         display: block;

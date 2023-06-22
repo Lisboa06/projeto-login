@@ -20,13 +20,13 @@
                 </p>
                 <form action="login.php" method="post" autocomplete="off">
                     <div class="campo">
-                        <input type="email" name="login" id="ilogin" placeholder="Seu email" autocomplete="email" minlength="2" maxlength="10" required>
+                        <input type="email" name="login" id="ilogin" placeholder="Seu email" minlength="2" maxlength="31" required>
                         <label for="ilogin">
                             <span class="material-symbols-outlined">person</span>
                         </label>
                     </div>
                     <div class="campo">
-                        <input type="password" name="senha" id="isenha" placeholder="Sua senha" autocomplete="current-password" minlength="3" maxlength="18" required>
+                        <input type="password" name="senha" id="isenha" placeholder="Sua senha" autocomplete="current-password" minlength="3" maxlength="21" required>
                         <label for="isenha">
                             <span class="material-symbols-outlined icone">vpn_key</span>
                         </label>
@@ -38,6 +38,22 @@
                 </form>
             </div>
         </section>
+        <nav>
+            <div class="socialIcons">
+                  <!-- <a href="#"> -->
+                    <figure class="float-animation" onclick="window.location.href = 'https://github.com/Lisboa06';">
+                      <img src="imagens/social/logo_github_icon.png" alt="GitHub">
+                      <figcaption>GitHub</figcaption>
+                    </figure>
+                  <!-- </a> -->
+                  <!-- <a href="#"> -->
+                    <figure class="float-animation2" onclick="window.location.href = '#';">
+                      <img src="imagens/social/logo_instagram_icon.png" alt="Twitter">
+                      <figcaption>Instagram</figcaption>
+                    </figure>
+                  <!-- </a> -->
+              </div>
+        </nav>
     </main>
 </body>
 </html>

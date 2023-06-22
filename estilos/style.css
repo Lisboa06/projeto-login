@@ -26,23 +26,22 @@ main {
     justify-content: center;
     align-items: center;
     display: flex;
+    flex-direction: column;
 }
 
 section.login {
+    height: 300px;
+    min-height: 500px;
+    width: 250px;
     overflow: hidden;
     background-color: white;
-    width: 250px;
-    height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px #00000072;
     position: relative;
     display: block;
 
-    /* transition: width .7s, height .5s;
-    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1); */
-
-    transition: width .7s, height .7s;
-    transition-timing-function: ease-out;
+    transition: width .5s, height .7s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 section.login div.imagem {
@@ -52,6 +51,13 @@ section.login div.imagem {
     background-position: center center;
     min-height: 200px;
     display: block;
+    transition: background-position .6s ease-out;
+    transition: all .7s;
+}
+
+section.login div.imagem:hover {
+    background-position: left center;
+    transition: .6s;
 }
 
 section.login div.formulario {
@@ -133,3 +139,100 @@ form a.botao:hover {
 form a.botao span {
     font-size: 0.9em;
 }
+
+            /* SOCIAL MEDIAS -START */
+.socialIcons {
+    /* border: 1px solid red; apagar dps de configurar icones */
+    text-align: center;
+    margin-top: 20px;
+}
+
+figure {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: 9px 7px;
+    padding: 2px;
+    /* border: 2px solid blue; apagar dps de configurar icones */
+    font-family: Tahoma, sans-serif;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.803);
+}
+
+figure:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+figcaption {
+    /* border: 1px solid black; apagar dps de configurar icones */
+    text-align: center;
+    font-size: .9em;
+    margin-bottom: 3px;
+}
+  
+.socialIcons img {
+    /* border: 1px solid black; apagar dps de configurar icones */
+    width: 40px;
+    height: 40px;
+    margin: 2px 15px;
+    padding: 0px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transition: .3s;
+}
+figure:hover img {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    transition: .5s;
+}
+
+.float-animation {
+    transform-origin: 50%;
+    position: relative;
+    animation: float 2.9s infinite ease-in-out;
+}
+    @keyframes float {
+        0% {
+            transform: scale(1);
+            transform: translatey(0px);
+            box-shadow: 0 5px 15px 0px #00000080;
+        }
+        50% {
+            transform: scale(1);
+            transform: translatey(-8px);
+            box-shadow: 0 25px 15px 0px #0000002b;
+        }
+        100% {
+            transform: scale(1);
+            transform: translatey(0px);
+            box-shadow: 0 5px 15px 0px #00000080;
+        }
+    }
+
+.float-animation2 {
+    transform-origin: 50%;
+    position: relative;
+    animation: float2 2.9s infinite ease-in-out;
+}
+    @keyframes float2 {
+        0% {
+            transform: scale(1);
+            transform: translatey(-8px);
+            /* box-shadow: 0 5px 15px 0px #00000080; */
+            box-shadow: 0 25px 15px 0px #0000002b;
+        }
+        50% {
+            transform: scale(1);
+            transform: translatey(0px);
+            /* box-shadow: 0 25px 15px 0px #0000002b; */
+            box-shadow: 0 5px 15px 0px #00000080;
+        }
+        100% {
+            transform: scale(1);
+            transform: translatey(-8px);
+            /* box-shadow: 0 5px 15px 0px #00000080; */
+            box-shadow: 0 25px 15px 0px #0000002b;
+        }
+    }
+                /* SOCIAL MEDIAS -END */
