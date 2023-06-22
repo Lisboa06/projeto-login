@@ -32,12 +32,11 @@ main {
 section.login {
     height: 300px;
     min-height: 500px;
-    width: 250px;
+    width: 245px;
     overflow: hidden;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0px 0px 10px #00000072;
-    position: relative;
     display: block;
 
     transition: width .5s, height .6s;
@@ -52,7 +51,8 @@ section.login div.imagem {
     min-height: 200px;
     display: block;
     transition: background-position .6s ease-out;
-    transition: width .4s ease;
+    transition: background-image .5s ease;
+    transition: width .3 ease;
 }
 
 section.login div.imagem:hover {
