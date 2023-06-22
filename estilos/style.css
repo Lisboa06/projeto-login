@@ -50,9 +50,9 @@ section.login div.imagem {
     background-position: center center;
     min-height: 200px;
     display: block;
-    transition: background-position .6s ease-out;
-    transition: background-image .5s ease;
-    transition: width .3 ease;
+    /* transition: background-image .5s ease; */
+    transition: width .2 ease;
+    transition: all .5s ease-out;
 }
 
 section.login div.imagem:hover {
