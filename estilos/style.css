@@ -40,8 +40,8 @@ section.login {
     position: relative;
     display: block;
 
-    transition: width .5s, height .7s;
-    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: width .5s, height .6s;
+    transition-timing-function: ease;
 }
 
 section.login div.imagem {
@@ -52,7 +52,7 @@ section.login div.imagem {
     min-height: 200px;
     display: block;
     transition: background-position .6s ease-out;
-    transition: all .7s;
+    transition: width .4s ease;
 }
 
 section.login div.imagem:hover {

@@ -18,6 +18,7 @@ Grandes Telas: de 1200px para cima
     section.login {
         width: 90vw;
         height: 300px;
+        min-height: 300px;
         border-radius: 16px;
         background: rgba(175, 180, 180, 0.244);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -82,8 +83,13 @@ Grandes Telas: de 1200px para cima
     
     section.login {
         width: 980px;
-        height: 430px;
-        min-height: 40px;
+        height: 310px;
+        min-height: 310px;
+        background: rgba(175, 180, 180, 0.244);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+
         transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
     }
     section.login div.imagem {
@@ -104,5 +110,19 @@ Grandes Telas: de 1200px para cima
     }
     div.formulario > p {
         font-size: 1.2em;
+    }
+    div.campo input {
+        width: 250px;
+        height: 32px;
+    }
+    form > input[type=submit] {
+        margin: 12px auto;
+    }
+
+    figure {
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        background-color: #ffffff28;
     }
 }
