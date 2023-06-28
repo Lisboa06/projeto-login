@@ -225,20 +225,20 @@ figure:hover img {
         0% {
             transform: scale(1);
             transform: translatey(-8px);
-            /* box-shadow: 0 5px 15px 0px #00000080; */
             box-shadow: 0 25px 15px 0px #0000002b;
+            /* box-shadow: 0 5px 15px 0px #00000080; */
         }
         50% {
             transform: scale(1);
             transform: translatey(0px);
-            /* box-shadow: 0 25px 15px 0px #0000002b; */
             box-shadow: 0 5px 15px 0px #00000080;
+            /* box-shadow: 0 25px 15px 0px #0000002b; */
         }
         100% {
             transform: scale(1);
             transform: translatey(-8px);
-            /* box-shadow: 0 5px 15px 0px #00000080; */
             box-shadow: 0 25px 15px 0px #0000002b;
+            /* box-shadow: 0 5px 15px 0px #00000080; */
         }
     }
                 /* SOCIAL MEDIAS -END */
